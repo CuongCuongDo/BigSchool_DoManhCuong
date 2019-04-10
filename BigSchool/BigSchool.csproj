@@ -209,8 +209,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DTOs\AttendanceDto.cs" />
+    <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -238,6 +241,14 @@
     <Compile Include="Migrations\201904100555194_AddAttendance.Designer.cs">
       <DependentUpon>201904100555194_AddAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904100654307_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\201904100654307_AddFollowingsTable.Designer.cs">
+      <DependentUpon>201904100654307_AddFollowingsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904100729095_fixloigido.cs" />
+    <Compile Include="Migrations\201904100729095_fixloigido.Designer.cs">
+      <DependentUpon>201904100729095_fixloigido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -245,6 +256,7 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Following.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -343,6 +355,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904100555194_AddAttendance.resx">
       <DependentUpon>201904100555194_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100654307_AddFollowingsTable.resx">
+      <DependentUpon>201904100654307_AddFollowingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100729095_fixloigido.resx">
+      <DependentUpon>201904100729095_fixloigido.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
