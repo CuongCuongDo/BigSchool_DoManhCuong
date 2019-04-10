@@ -207,6 +207,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\CoursesController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\FollowingsController.cs" />
@@ -249,6 +250,10 @@
     <Compile Include="Migrations\201904100729095_fixloigido.Designer.cs">
       <DependentUpon>201904100729095_fixloigido.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904100937514_AddIsCanceledColumnToCourse.cs" />
+    <Compile Include="Migrations\201904100937514_AddIsCanceledColumnToCourse.Designer.cs">
+      <DependentUpon>201904100937514_AddIsCanceledColumnToCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -258,6 +263,7 @@
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Following.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="ViewModels\CoursesViewModel.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -273,6 +279,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootbox.all.min.js" />
+    <Content Include="Scripts\bootbox.locales.min.js" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -324,6 +333,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
+    <Content Include="Views\Course\Attending.cshtml" />
+    <Content Include="Views\Course\Mine.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -361,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904100729095_fixloigido.resx">
       <DependentUpon>201904100729095_fixloigido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100937514_AddIsCanceledColumnToCourse.resx">
+      <DependentUpon>201904100937514_AddIsCanceledColumnToCourse.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

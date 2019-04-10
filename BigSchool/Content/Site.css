@@ -34,6 +34,14 @@ textarea {
 {
     color:white;
 }
+.course > li.action{
+    display: none;
+    left:70px;
+    position:absolute;
+}
+.course > li:hover .action{
+    display: block;
+}
 /*Course layout*/
 .course
 {
